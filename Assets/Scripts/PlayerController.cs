@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float boostSpeed = 30.0f;
     [SerializeField] float normalSpeed = 20.0f;
 
+
     Rigidbody2D rb2d;
     SurfaceEffector2D surfaceEffector2d;
 
