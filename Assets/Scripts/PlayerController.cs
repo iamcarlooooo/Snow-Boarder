@@ -9,7 +9,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    [SerializeField] float torqueAmount = 1f;
+    [SerializeField] float torqueAmount = 10.0f;
     Rigidbody2D rb2d;
 
     void Start()
@@ -24,10 +24,12 @@ public class PlayerController : MonoBehaviour
         {
             rb2d.AddTorque(torqueAmount);
         } 
-
-        else if (Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetKey(KeyCode.RightArrow))
         {
-            rb2d.AddTorque(torqueAmount);
+            rb2d.AddTorque(-torqueAmount);
         }
+
+       
+
     }
 }
